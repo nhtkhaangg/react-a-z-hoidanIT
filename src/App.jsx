@@ -3,16 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+//compoment viết hoa chữ cái đầu tiên
+const MyComponent = () => {
+  return (
+    <div> Khaang </div>
+  );
+
+}
+
+
+
 const App = () => {
   const [count, setCount] = useState(0)
-
-  const myFunction = () => {
-    console.log (">>Run my arrow!!!")
-  }
-
-  myFunction();
-
-
 
   return (
     <>
@@ -24,7 +26,8 @@ const App = () => {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Tài Nè</h1>
+      <h1>React Nè</h1>
+      <MyComponent></MyComponent>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
