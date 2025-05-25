@@ -7,13 +7,26 @@ import reactLogo from './assets/react.svg'
 //compoment viết hoa chữ cái đầu tiên
 const App = () => {
 
+  const Khaangdev = "Khaang";
+  const age = 21;
+  const data = {
+    address: 'HoChiMinh',
+    country: 'VietNam'
+  }
+
+  // Object => {key: value}
   return (
 
     <div className='todo-container'>Hello Word
       <div className='todo-title'>Todo List</div>
-      
+
     <TodoNew />
-    <TodoData />
+    <TodoData 
+    name = {Khaangdev}
+    age = {age}
+    data = {data}
+    />
+
 
     <div className="todo-image">
       {/* này là biến số: {} */}
