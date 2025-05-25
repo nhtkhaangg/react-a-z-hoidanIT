@@ -14,17 +14,25 @@ const App = () => {
     country: 'VietNam'
   }
 
+
+  const addNewTodo = (name) => {
+    alert(`call me ${name}`)
+  }
   // Object => {key: value}
   return (
 
     <div className='todo-container'>Hello Word
-      <div className='todo-title'>Todo List</div>
+    <div className='todo-title'>Todo List</div>
 
-    <TodoNew />
+    <TodoNew 
+    addNewTodo = {addNewTodo}
+    />
+    
     <TodoData 
     name = {Khaangdev}
     age = {age}
     data = {data}
+    
     />
 
 
