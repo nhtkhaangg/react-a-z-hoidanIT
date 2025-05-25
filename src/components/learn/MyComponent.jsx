@@ -8,12 +8,12 @@ const MyComponent = () => {
   // const hoidanit = true; //boolean
   // const hoidanit = undefined;
   // const hoidanit = null;
-  // const hoidanit = [1, 2, 3];
+  const hoidanit = [1, 2, 3];
   // const hoidanit = {
   //   name: "hoidanit",
   //   age: 25
   // };
-  
+
   return (
 
     <>
