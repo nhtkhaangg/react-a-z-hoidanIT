@@ -2,10 +2,17 @@ import './components/learn/todo/todo.css';
 import TodoData from './components/learn/todo/TodoData';
 import TodoNew from './components/learn/todo/TodoNew';
 import reactLogo from './assets/react.svg'
+import { useState } from 'react';
 
 
 //compoment viết hoa chữ cái đầu tiên
 const App = () => {
+
+  const[todoList, setTodoList] = useState([
+    {id: 1, name: "Learning React"},
+    {id: 2, name: "Watching Youtube"}
+    
+  ])
 
   const Khaangdev = "Khaang";
   const age = 21;
@@ -32,6 +39,7 @@ const App = () => {
     name = {Khaangdev}
     age = {age}
     data = {data}
+    todoList={todoList}
     
     />
 
