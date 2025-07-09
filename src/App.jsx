@@ -32,7 +32,11 @@ const App = () => {
     return Math.floor(Math.random() * (max - min + 1) + min);
   }
 
-
+  // Xoá phần tử theo Id
+  const deleteTodo = (id) => {
+    const newTodo = todoList.filter(item => item.id !== id)
+    setTodoList(newTodo);
+  }
 
 
   // Object => {key: value}
@@ -49,6 +53,7 @@ const App = () => {
       {todoList.length > 0 ?
         <TodoData
           todoList={todoList}
+          deleteTodo = {deleteTodo}
         />
         :
       <div className="todo-image">
