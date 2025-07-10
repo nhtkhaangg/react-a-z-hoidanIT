@@ -10,21 +10,27 @@ import {
 } from "react-router-dom";
 import Products from './pages/products.jsx'
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App/>,
-  },
 
-  {
-    path: "/users",
-    element: <Users/>
-  },
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <App />,
 
-  {
-    path: "/products",
-    element: <Products/>
-  },
+      children: [
+        {
+          path: "/users",
+          element: <Users />
+        },
+
+        {
+          path: "/products",
+          element: <Products />
+        },
+      ]
+
+    },
+
+
 
 
 ]);
@@ -34,6 +40,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
 
     <RouterProvider router={router} />
-    
+
   </React.StrictMode>,
 )
