@@ -9,6 +9,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Products from './pages/products.jsx'
+import TodoApp from './components/learn/todo/TodoApp.jsx'
 
 
   const router = createBrowserRouter([
@@ -17,6 +18,10 @@ import Products from './pages/products.jsx'
       element: <App />,
 
       children: [
+        {
+          index: true,
+          element: < TodoApp />
+        },
         {
           path: "/users",
           element: <Users />
