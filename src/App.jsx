@@ -3,6 +3,8 @@ import TodoData from './components/learn/todo/TodoData';
 import TodoNew from './components/learn/todo/TodoNew';
 import reactLogo from './assets/react.svg'
 import { useState } from 'react';
+import Header from './components/layout/header';
+import Footer from './components/layout/footer';
 
 
 //compoment viết hoa chữ cái đầu tiên
@@ -41,7 +43,8 @@ const App = () => {
 
   // Object => {key: value}
   return (
-
+    <>
+    < Header/>
     <div className='todo-container'>Hello Word
       <div className='todo-title'>Todo List</div>
 
@@ -64,6 +67,8 @@ const App = () => {
       }
 
     </div>
+    < Footer/>
+    </>
   )
 }
 
